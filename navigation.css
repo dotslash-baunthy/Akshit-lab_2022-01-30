@@ -1,0 +1,52 @@
+body {
+    margin: 0%;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    color: rgb(255,255,255);
+    padding: 5px;
+    background-color: red;
+    color: black;
+}
+
+#navigation {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgb(162,164,168);
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color: black;
+}
+
+.dropdown {
+    position: absolute;
+    width: auto;
+    max-width: 120px;
+    display: none;
+    top: 42.5px;
+    background-color: rgb(162,164,168);
+    padding: 0px;
+}
+
+.menu li:nth-child(2):hover .dropdown, .menu li:nth-child(3):hover .dropdown{
+    display: block;
+}
